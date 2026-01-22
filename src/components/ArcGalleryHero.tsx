@@ -53,20 +53,20 @@ const ArcGalleryHero = ({
   return (
     <section className={`relative overflow-hidden bg-background min-h-screen flex flex-col ${className}`}>
       <nav className="absolute top-0 left-0 right-0 z-20 px-6 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold text-foreground">CryptoPartners</div>
+        <a href="/" className="text-xl font-bold text-foreground">CryptoPartners</a>
         <div className="flex gap-4">
-          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/login" className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
             Партнёр
-          </button>
-          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          </a>
+          <a href="/login" className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
             Селлер
-          </button>
-          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          </a>
+          <a href="/login" className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
             Админ
-          </button>
-          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          </a>
+          <a href="/login" className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
             Поддержка
-          </button>
+          </a>
         </div>
       </nav>
       <div
@@ -124,12 +124,12 @@ const ArcGalleryHero = ({
             Продавайте товары, привлекайте партнёров и получайте вознаграждение в криптовалюте
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <a href="/login" className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center">
               Стать партнёром
-            </button>
-            <button className="w-full sm:w-auto px-6 py-3 rounded-full border border-border hover:bg-accent hover:text-accent-foreground transition-all duration-200">
+            </a>
+            <a href="/login" className="w-full sm:w-auto px-6 py-3 rounded-full border border-border hover:bg-accent hover:text-accent-foreground transition-all duration-200 text-center">
               Войти в кабинет
-            </button>
+            </a>
           </div>
         </div>
       </div>
