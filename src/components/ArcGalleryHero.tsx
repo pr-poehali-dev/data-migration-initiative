@@ -52,6 +52,23 @@ const ArcGalleryHero = ({
 
   return (
     <section className={`relative overflow-hidden bg-background min-h-screen flex flex-col ${className}`}>
+      <nav className="absolute top-0 left-0 right-0 z-20 px-6 py-4 flex justify-between items-center">
+        <div className="text-xl font-bold text-foreground">CryptoPartners</div>
+        <div className="flex gap-4">
+          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Партнёр
+          </button>
+          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Селлер
+          </button>
+          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Админ
+          </button>
+          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Поддержка
+          </button>
+        </div>
+      </nav>
       <div
         className="relative mx-auto"
         style={{
@@ -101,17 +118,17 @@ const ArcGalleryHero = ({
       <div className="relative z-10 flex-1 flex items-center justify-center px-6 -mt-40 md:-mt-52 lg:-mt-64">
         <div className="text-center max-w-2xl px-6 opacity-0 animate-fade-in" style={{ animationDelay: '800ms', animationFillMode: 'forwards' }}>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-            Визуальная галерея для вашего проекта
+            Партнёрская платформа с крипто-платежами
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Создавайте впечатляющие презентации изображений за считанные минуты.
+            Продавайте товары, привлекайте партнёров и получайте вознаграждение в криптовалюте
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              Начать создавать
+              Стать партнёром
             </button>
             <button className="w-full sm:w-auto px-6 py-3 rounded-full border border-border hover:bg-accent hover:text-accent-foreground transition-all duration-200">
-              Узнать больше
+              Войти в кабинет
             </button>
           </div>
         </div>
