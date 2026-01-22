@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Get transactions list",
+      "method": "GET",
+      "path": "/?action=transactions",
+      "headers": {
+        "X-Session-Token": "test-token"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "transactions": "array"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
